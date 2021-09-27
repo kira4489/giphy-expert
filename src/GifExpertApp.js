@@ -22,18 +22,19 @@ export const GifExpertApp = () => {
 
   return (
     <>
-      <h2>git expert app</h2>
+      <h2>Git Expert App</h2>
       <AddCategory setCategories={setCategories}/>
       <hr />
 
       {/* <button onClick={() => handleAdd()}>Agregar</button> */}
 
       <ol>
-        {categories.map((category) => 
-          <GifGrid 
+        {categories.map((category) => {
+          return (
+          <GifGrid
           key={category}
-          category={category}/>)
-        }
+          category={category}/>
+        )})}
       </ol>
     </>
   );
