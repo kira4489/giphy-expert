@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const GridItem = ({id,title,url}) => {
+export const GridItem = ({title,url}) => {
     return (
         <div className="card">
             <img src={url} alt={title}/>

@@ -1,5 +1,4 @@
-import React/* {useState,useEffect } */ from 'react'
-import { getGifs } from '../Helpers/getGifs'
+import React from 'react'
 import { GridItem } from './GridItem'
 import { useFetchGifs } from '../Hooks/useFetchGifs'
 
