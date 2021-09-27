@@ -4,7 +4,7 @@ import { GridItem } from './GridItem'
 import { useFetchGifs } from '../Hooks/useFetchGifs'
 
 export const GifGrid = ({ category }) => {
-const {data,loading} = useFetchGifs(category);
+const {data:images,loading} = useFetchGifs(category);
 /* const [counts,setCounts]=useState(0) */
 // const [images,setImages]=useState([])
 
@@ -37,7 +37,7 @@ setImages(gifs)
         {loading && <p>loading</p> }
            <ol>
                {
-                data.map(img => (
+                images.map(img => (
                    <GridItem 
                    key={img.id}
                    {...img}/>
