@@ -13,10 +13,13 @@ input{
 }
 
 .card-grid{
+  width: 100%;
 }
 
 .card{
-  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   border: 1px solid grey;
   border-radius: 6px;
   overflow: hidden;
