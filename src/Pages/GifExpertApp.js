@@ -27,15 +27,14 @@ export const GifExpertApp = () => {
       <hr />
 
       {/* <button onClick={() => handleAdd()}>Agregar</button> */}
-
-      <ol>
+    <div>
         {categories.map((category) => {
           return (
           <GifGrid
           key={category}
           category={category}/>
         )})}
-      </ol>
+      </div>
     </>
   );
 };

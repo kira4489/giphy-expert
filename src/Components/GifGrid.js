@@ -34,11 +34,9 @@ setImages(gifs)
       <h3>{category}</h3>
       <div className="card-grid">
         {loading && <p>loading</p>}
-        <ol>
           {images.map((img) => (
             <GridItem key={img.id} {...img} />
           ))}
-        </ol>
       </div>
       {/* {loading ? "cargando..." : "fin carga"} */}
     </>
