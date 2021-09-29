@@ -4,36 +4,31 @@ import { GifGrid } from "../Components/GifGrid";
 
 export const GifExpertApp = () => {
   //const categories = ["one punch","samurai x","dragon ball"]
- /*  const [categories, setCategories] = useState([
+  /*  const [categories, setCategories] = useState([
     "one punch",
     "samurai x",
     "dragon ball",
   ]); */
 
-  const [categories, setCategories] = useState([
-    "one punch"
-  ])
+  const [categories, setCategories] = useState(["one punch"]);
 
-//   const handleAdd = () => {
-//     setCategories((cats) => [...cats, "hunter"]);
-//     /* setCategories(["hunter",...categories,]) */
-//     //otra forma de agregar otro elemento
-//   };
+  //   const handleAdd = () => {
+  //     setCategories((cats) => [...cats, "hunter"]);
+  //     /* setCategories(["hunter",...categories,]) */
+  //     //otra forma de agregar otro elemento
+  //   };
 
   return (
     <>
       <h2>Git Expert App</h2>
-      <AddCategory setCategories={setCategories}/>
+      <AddCategory setCategories={setCategories} />
       <hr />
 
       {/* <button onClick={() => handleAdd()}>Agregar</button> */}
-    <div>
+      <div>
         {categories.map((category) => {
-          return (
-          <GifGrid
-          key={category}
-          category={category}/>
-        )})}
+          return <GifGrid key={category} category={category} />;
+        })}
       </div>
     </>
   );
