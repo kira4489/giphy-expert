@@ -4,19 +4,28 @@
 
 body{
   padding: 60px;
+  background: linear-gradient(315deg, #4e86d0 0%, #adf9d7 100%)
 }
 
 input{
   font-size: 1.3rem;
   width: 50%;
+  display: block;
+  margin: 0 auto;
   outline: none;
   color: gray;
 }
 
 hr{
   width:50%;
+  display: block;
+  margin: 10px auto;
   text-align:left;
-  margin-left:0
+}
+
+.text-title{
+  text-align: center;
+  margin-top: 40px;
 }
 
 .card-grid{
@@ -35,11 +44,13 @@ hr{
   border-radius: 6px;
   overflow: hidden;
   width: 20%;
+  box-shadow: 1px 0 0 #888888;
   margin: 2rem
 }
 
 .card p{
   text-align: left;
+  text-transform: capitalize;
   padding: 5px;
 }
 

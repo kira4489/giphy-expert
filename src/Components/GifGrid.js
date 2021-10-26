@@ -31,7 +31,7 @@ setImages(gifs)
 
   return (
     <>
-      <h3>{category}</h3>
+      <h3 className="text-title">{category}</h3>
       <div className="card-grid">
         {loading && <p>loading</p>}
           {images.map((img) => (

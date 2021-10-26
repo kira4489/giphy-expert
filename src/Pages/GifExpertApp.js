@@ -10,7 +10,7 @@ export const GifExpertApp = () => {
     "dragon ball",
   ]); */
 
-  const [categories, setCategories] = useState(["one punch"]);
+  const [categories, setCategories] = useState(["One punch"]);
 
   //   const handleAdd = () => {
   //     setCategories((cats) => [...cats, "hunter"]);
