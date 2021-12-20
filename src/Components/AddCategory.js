@@ -27,6 +27,11 @@ export const AddCategory = ({ setCategories }) => {
   );
 };
 
+/**prototypes se utilizan
+ * para un desarrollo entre varios
+ * desarrolladores
+ */
+
 /* AddCategory.PropTypes={
   setCategories: PropTypes.func.isRequired
 } */
