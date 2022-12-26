@@ -20,7 +20,7 @@ export const GifExpertApp = () => {
 
   return (
     <>
-      <h2 className="main-git">Git Expert App</h2>
+      <h2 className="main-git">Git Expert Apps</h2>
       <AddCategory setCategories={setCategories} />
       <hr />
 
