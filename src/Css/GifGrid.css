@@ -17,6 +17,8 @@ input {
   .text-title {
     text-align: start;
     margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 0px 60px;
   }
   
   .card-grid {
@@ -51,6 +53,10 @@ input {
   .card img {
     max-height: 280px;
   }
+
+  .maingit {
+    padding: 50px
+  }
   
   @media screen and (max-width:768px) {
     .card{
@@ -66,6 +72,10 @@ input {
     .card img{
      width: 300px;
     }
+    .card p{
+    padding: 10px;
+    }
+
     .text-title {
       text-align: center;
     }
