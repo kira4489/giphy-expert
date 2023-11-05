@@ -58,22 +58,15 @@ input {
     padding: 50px
   }
   
-  @media screen and (max-width:768px) {
-    .card{
-      width: 50%;
-    }
-  }
-  
-  
-  @media screen and (max-width: 500px) {
-    .card {
-      width: 80%;
-    }
+@media screen and (max-width: 500px) {
     .card img{
      width: 300px;
     }
     .card p{
-    padding: 10px;
+      max-width: 500px;
+      overflow: scroll;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
 
     .text-title {
